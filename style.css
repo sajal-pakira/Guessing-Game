@@ -1,0 +1,221 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  background: linear-gradient(135deg, #6a11cb, #2575fc);
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+  text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.6);
+}
+
+p {
+  font-size: 1.2rem;
+  margin: 10px 0;
+}
+
+
+#wrapper {
+  background: rgba(0, 0, 0, 0.3);
+  padding: 30px;
+  border-radius: 10px;
+  max-width: 500px;
+  margin: 0 auto;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+  transition: all 0.3s ease;
+}
+
+#wrapper:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 50px rgba(0, 0, 0, 0.7);
+}
+
+
+.form {
+  margin-top: 20px;
+}
+
+#guessField {
+  padding: 10px;
+  font-size: 1rem;
+  width: 80%;
+  margin: 10px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  transition: border 0.3s ease;
+}
+
+#guessField:focus {
+  outline: none;
+  border-color: #2575fc;
+}
+
+.guessSubmit {
+  padding: 10px 20px;
+  background-color: #28a745;
+  color: white;
+  font-size: 1.1rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  margin-top: 10px;
+}
+
+.guessSubmit:hover {
+  background-color: #218838;
+  transform: scale(1.1);
+}
+
+.guessSubmit:active {
+  background-color: #1e7e34;
+  transform: scale(1);
+}
+
+.guessSubmit:disabled {
+  background-color: #aaa;
+  cursor: not-allowed;
+}
+
+/* Style for the Submit button (#subt) */
+#subt {
+  padding: 10px 20px;
+  background-color: #007bff; /* Initial blue color */
+  color: white;
+  font-size: 1.1rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  margin-top: 10px;
+}
+ 
+
+/* Display the button when it's shown */
+#subt.displayed {
+  opacity: 1;
+  pointer-events: auto;
+  /* transition: opacity 0.3s ease, transform 0.3s ease; */
+}
+
+/* Hover effect for the Submit button */
+#subt:hover {
+  background-color: #0056b3; /* Darker blue */
+  transform: scale(1.05); /* Slight zoom effect */
+}
+
+/* Active state (button press) */
+#subt:active {
+  background-color: #004085; /* Even darker blue */
+  transform: scale(1); /* Reset zoom */
+}
+
+/* Disabled button state */
+/* #subt:disabled {
+  background-color: #6c757d;  Grey color for disabled state 
+  cursor: not-allowed;  Show not-allowed cursor 
+  opacity: 0.6;
+} */
+
+
+
+.resultParas {
+  margin-top: 20px;
+}
+
+.guesses {
+  font-size: 1.2rem;
+  margin-top: 10px;
+  display: inline-block;
+}
+
+.lastResult {
+  font-size: 2rem;
+  color: #ffdc00;
+  font-weight: bold;
+}
+
+.lowOrHi {
+  margin-top: 20px;
+  font-size: 1.5rem;
+  color: #fff;
+}
+
+
+#button {
+  padding: 12px 24px;
+  background-color: #28a745;
+  color: white;
+  font-size: 1.2rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  margin-top: 20px;
+  animation: bounce 1s ease infinite; 
+}
+#button:hover {
+  background-color: #218838;
+  transform: scale(1.1);
+}
+
+#button:active {
+  background-color: #1e7e34;
+  transform: scale(1);
+}
+
+
+@keyframes bounce {
+  0% {
+    transform: translateY(0);
+  }
+  25% {
+    transform: translateY(-10px);
+  }
+  50% {
+    transform: translateY(0);
+  }
+  75% {
+    transform: translateY(-5px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+#button {
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+
+a {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 1.2rem;
+}
+
+a:hover {
+  color: #ffdc00;
+  text-decoration: underline;
+}
