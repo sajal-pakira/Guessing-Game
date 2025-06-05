@@ -1,0 +1,17 @@
+
+---
+
+## ✨ Features
+
+- Interactive UI with immediate feedback
+- Responsive layout for all devices
+- Simple, clean design
+- Reset option to replay
+
+---
+
+## 📌 Getting Started (For Local Setup)
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/your-username/guessing-game.git
